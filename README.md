@@ -9,5 +9,5 @@
 
 [原版 https://github.com/30-seconds/30-seconds-of-css](https://github.com/30-seconds/30-seconds-of-css)
 
-[中文翻译版  https://github.com/Bigerfe/30-seconds-zh/tree/master/30-seconds-of-css]
+[中文翻译版  https://github.com/Bigerfe/30-seconds-zh/tree/master/30-seconds-of-css](https://github.com/Bigerfe/30-seconds-zh/tree/master/30-seconds-of-css)
 
