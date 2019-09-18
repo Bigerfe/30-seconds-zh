@@ -11,7 +11,7 @@
 
 [中文翻译版  https://github.com/Bigerfe/30-seconds-zh/tree/master/30-seconds-of-css](https://github.com/Bigerfe/30-seconds-zh/tree/master/30-seconds-of-css) 
 
-### 有用的 Javascript 片段集合
+### 有用的 Javascript 片段集合
 
 收集有用的javascript片段，你可以在30秒或更短的时间内理解它们。
 
