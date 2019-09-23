@@ -1,15 +1,18 @@
-精选的有用CSS片段集合，你可以在30秒或更短的时间内理解这些片段。
 
-本文属于意译而非直译，在其中也增加了一些自己的语言和理解，如果存在偏差或错误还请留言指正。
+本文属于意译而非直译，为了方便理解也增加了一些自己的语言，如果存在偏差或错误还请留言指正。
 
-本 css 精选结合共分为5大块儿， 布局类、视觉类、动画类、交互类、其他。
+**精选的有用CSS片段集合，您可以在30秒或更短的时间内理解这些片段。**
 
-更加详细的介绍还请看原英文项目 - [https://github.com/30-seconds/30-seconds-of-css](https://github.com/30-seconds/30-seconds-of-css).
+**本 CSS 精选集合共分为5类 -  布局、视觉、动画、交互、其他。**
 
-### 1. 重置盒模型
+更加详细的内容还请看 原文档。[https://github.com/30-seconds/30-seconds-of-css](https://github.com/30-seconds/30-seconds-of-css)。
+
+# 布局
+
+## 1. 盒模型重置
 -------
 ```
-重置盒模型，使盒子的宽度和高度不受其边框(border)或填充(padding)的影响。
+盒模型重置，使盒子的宽度和高度不受其边框(border)或填充(padding)的影响。
 ```
 `HTML`
 
@@ -57,7 +60,7 @@ html {
 99.9%  [查看本条 caniuse](https://caniuse.com/#feat=css3-boxsizing)
 
 
-### 2. Clearfix 清除浮动
+## 2. 清除浮动更好的方式
 ----
 无需借助辅助元素进行浮动的清除。
 
@@ -145,7 +148,7 @@ html {
 
 ---
 
-### 4. Display table centering 如何使用表格居中
+## 4.使用表格居中
 ----
 使用display：table（作为flexbox的替代）使子元素在其父元素中水平垂直居。
 
@@ -196,7 +199,7 @@ html {
 100%  [查看本条 caniuse](https://caniuse.com/#search=display%3A%20table)
 
 
-### 5. Evenly distributed children 使子元素均匀分布
+## 5. 使子元素均匀分布
 ----
 
 `HTML`
@@ -237,7 +240,7 @@ html {
 * 需要前缀才能获得全面支持。
 [caniuse](https://caniuse.com/#feat=flexbox)
 
-### 6. Fit image in container 让图片在容器中显示的更舒适
+## 6. 让图片在容器中显示的更舒适
 ----
 
 设置图像在其容器内的适合度和位置，同时保留其宽高比。 以前只能使用背景图像和background-size属性来实现。
@@ -282,7 +285,7 @@ html {
 
 95.5% [caniuse](https://caniuse.com/#feat=object-fit)
 
-### 7.Flexbox centering 使用 flexbox 居中
+## 7. 使用 flexbox 居中
 ----
 使用 flexbox 水平垂直居中其子元素
 
@@ -318,7 +321,7 @@ html {
 
 
 
-### 8.小技巧 - 将元素垂直居中于另一个元素。
+## 8.将元素垂直居中于另一个元素。
 ----
 
 
@@ -361,7 +364,7 @@ p {
 99.9%  [caniuse](https://caniuse.com/#feat=inline-block)
 
 
-### 9. 如何使用网格居中
+## 9. 使用网格居中
 ----
 
 使用网格水平垂直居中子元素.
@@ -397,7 +400,7 @@ p {
 
 92.3%  [caniuse](https://caniuse.com/#feat=css-grid)
 
-### 10. 如何使最后一项占用剩余可用高度
+## 10. 使最后一项占满剩余高度
 ----
 
 通过为最后一个元素提供当前视口中剩余的可用空间，即使在调整窗口大小时，也可以利用可用的视口空间。
@@ -448,7 +451,7 @@ body {
 99.5% 需要使用前缀  [caniuse](https://caniuse.com/#feat=flexbox)
 
 
-### 11. 屏外隐藏元素
+## 11. 屏外隐藏元素
 ----
 
 `HTML`
@@ -493,7 +496,7 @@ body {
 100% 需要使用前缀  [caniuse](https://caniuse.com/#search=clip)
 (虽然cilp已被废弃，但较新的clip-path 目前对浏览器的支持非常有限。)
 
-### 12. 如何使用变换居中子元素
+## 12. 使用transform居中子元素
 ----
 
 使用 `position: absolute and transform: translate()` 进行居中，不需要知道父级和子元素的宽高，因此它非常适合响应式应用程序。
@@ -530,7 +533,9 @@ body {
 
 97.7% 需要使用前缀  [caniuse](https://caniuse.com/#feat=transforms2d)
 
-### 13.截断的多行文本
+# 视觉
+
+## 13.多行文本截断显示
 ----
 
 如果文本长于一行，则将截断n行，并以渐变结束。
@@ -584,7 +589,7 @@ body {
 
 97.5%   [caniuse](https://caniuse.com/#feat=css-gradients)
 
-### 14. 画一个圆
+## 14. 画一个圆
 ----
 使用纯CSS创建圆形。
 
@@ -612,7 +617,7 @@ body {
 
 97.7%  [caniuse](https://caniuse.com/#feat=border-radius)
 
-### 15. 列表计数器
+## 15. 列表计数器
 ----
 
 计数器本质上是由CSS维护的变量，其值可以通过CSS规则递增以跟踪它们被使用的次数。
@@ -661,7 +666,7 @@ li::before {
 
 99.9%  [caniuse](https://caniuse.com/#feat=css-counters)
 
-### 16.自定义滚动条
+## 16.自定义滚动条
 ----
 `HTML`
 ```html
@@ -705,7 +710,7 @@ li::before {
 
 90.7%  [caniuse](https://caniuse.com/#feat=css-scrollbar)
 
-### 17. 如何自定义文本选择的样式
+## 17. 自定义文本选择的样式
 ----
 
 `HTML`
@@ -735,7 +740,7 @@ li::before {
 86.5%  [caniuse](https://caniuse.com/#feat=css-selection)
 
 
-### 18. 创建动态阴影
+## 18. 创建动态阴影
 ----
 创建类似于box-shadow的阴影，但基于元素本身的颜色。
 
@@ -786,7 +791,7 @@ li::before {
 94.2%  需要使用前缀 [caniuse](https://caniuse.com/#feat=css-filters)
 
 
-### 19. Etched text 蚀刻的文字
+## 19. 蚀刻文字效果
 ----
 创建一种效果，其中文本看起来像“蚀刻”或雕刻在背景中。
 `HTML`
@@ -816,7 +821,7 @@ li::before {
 
 99.5%  需要使用前缀 [caniuse](https://caniuse.com/#feat=css-textshadow)
 
-### 20 .Focus Within 伪类
+## 20. Focus Within 伪类
 ----
 如果表单中的任何子项被聚焦，则更改表单的外观。
 `HTML`
@@ -856,7 +861,7 @@ form:focus-within {
 
 82.9% IE11或当前版本的Edge不支持。 [caniuse](https://caniuse.com/#feat=css-focus-within)
 
-### 21.全屏
+## 21. 指定元素的全屏
 ----
 `:fullsrcreen` 全屏伪类表示浏览器处于全屏模式时显示的元素。
 `HTML`
@@ -917,7 +922,7 @@ form:focus-within {
 [caniuse](https://caniuse.com/#feat=fullscreen)
 
 
-### 22.渐变文字
+## 22.渐变文字
 ----
 
 为文本提供渐变颜色。
@@ -947,7 +952,8 @@ form:focus-within {
 
 [caniuse](https://caniuse.com/#feat=text-stroke) 
 
-### 23.渐变跟踪
+
+## 23. 渐变跟踪
 ----
 
 一种悬停效果，其中渐变跟随鼠标光标。
@@ -1029,7 +1035,7 @@ document.querySelector('.button').onmousemove = (e) => {
 
 91.6%  需要使用 js  [caniuse](https://caniuse.com/#feat=css-variables) 
 
-### 24. :not 伪类选择器
+## 24. :not 伪类选择器
 ---
 
 `:not` 伪选择器对于设置一组元素的样式非常有用，同时保留最后一个（指定的）元素的样式。
@@ -1074,7 +1080,7 @@ li:not(:last-child) {
 
 99.9%  [caniuse](https://caniuse.com/#feat=css-sel3)
 
-### 25.溢出滚动渐变
+## 25.溢出滚动渐变
 ----
 
 给溢出元素添加渐变，以更好地指示要滚动的内容。
@@ -1121,9 +1127,8 @@ li:not(:last-child) {
 ```
 `DEMO`
 
-![](https://user-gold-cdn.xitu.io/2019/8/13/16c891cae8be85c1?w=1742&h=448&f=png&s=70380)
-[CodePen上查看和编辑代码](https://codepen.io/bigerfe-com/pen/VwZvMaa)
 
+![](https://user-gold-cdn.xitu.io/2019/9/23/16d5d2f579ee76ed?w=759&h=272&f=gif&s=215051)
 
 **说明**
 * `::after`  定义一个伪元素用来展示渐变效果
@@ -1135,7 +1140,7 @@ li:not(:last-child) {
 97.5%  [caniuse](https://caniuse.com/#feat=css-gradients)
 
 
-### 26.给文字添加漂亮的下划线
+## 26.给文字添加漂亮的下划线
 ----
 
 `HTML`
@@ -1173,7 +1178,7 @@ li:not(:last-child) {
 97.5% [caniuse1](https://caniuse.com/#feat=css-textshadow) [caniuse2](https://caniuse.com/#feat=css-gradients)
 
 
-### 27. 重置所有样式
+## 27. 重置所有样式
 ----
 
 使用一个属性将所有样式重置为默认值。 这不会影响`direction`和`unicode-bidi`属性。
@@ -1211,7 +1216,7 @@ li:not(:last-child) {
 91.2% [caniuse](https://caniuse.com/#feat=css-all) 
 
 
-### 28. 形状分隔符
+## 28. 形状分隔符
 ----
 使用SVG形状分割两个不同的块以创建更有趣的视觉外观。
 
@@ -1253,7 +1258,7 @@ li:not(:last-child) {
 
 
 
-### 29. 系统字体
+## 29. 系统字体
 ----
 `HTML`
 ```html
@@ -1290,7 +1295,7 @@ li:not(:last-child) {
 浏览器支持程度 100%
 
 
-### 30. 开关
+## 30. css 开关
 ----
 只使用 css 来实现
 
@@ -1334,9 +1339,8 @@ input[type='checkbox']:checked + .switch {
 
 `DEMO` 
 
-![](https://user-gold-cdn.xitu.io/2019/8/13/16c89768980c8c6c?w=1522&h=102&f=png&s=4484)
 
-![](https://user-gold-cdn.xitu.io/2019/8/13/16c8976acfa3d236?w=1544&h=94&f=png&s=4235)
+![](https://user-gold-cdn.xitu.io/2019/9/23/16d5d31e6ed96a47?w=768&h=62&f=gif&s=23598)
 
 [CodePen上预览和编辑代码](https://codepen.io/bigerfe-com/pen/vYBNWEd)
 
@@ -1346,7 +1350,7 @@ input[type='checkbox']:checked + .switch {
 
 [caniuse](https://caniuse.com/#feat=transforms2d) 
 
-### 31. 使用 css 画一个三角形
+## 31. 用 css 画一个三角形
 ----
 `HTML`
 ```html
@@ -1369,7 +1373,7 @@ input[type='checkbox']:checked + .switch {
 
 浏览器支持程度  100%；
 
-### 32. 斑马条纹列表
+## 32. 斑马条纹列表
 ----
 创建具有交替背景颜色的列表，这对于区分各行间的内容很有用。
 
@@ -1398,7 +1402,9 @@ li:nth-child(odd) {
 
 浏览器支持程度 99.9%  [caniuse](https://caniuse.com/#feat=css-sel3)
 
-### 33.弹跳 loading 动画
+# 动画
+
+## 33.弹跳 loading 动画
 ----
 `HTML`
 ```html
@@ -1437,15 +1443,14 @@ li:nth-child(odd) {
 ```
 `DEMO`
 
-![](https://user-gold-cdn.xitu.io/2019/8/13/16c899584baaa4d7?w=1672&h=256&f=png&s=10935)
 
-![](https://user-gold-cdn.xitu.io/2019/8/13/16c8995a9482f8e2?w=1700&h=282&f=png&s=11374)
+![](https://user-gold-cdn.xitu.io/2019/9/23/16d5d32c661a0c11?w=774&h=140&f=gif&s=23680)
 
 [CodePen上预览和编辑代码](https://codepen.io/bigerfe-com/pen/jONbaLE)
 
 浏览器支持程度97.4%  [caniuse](https://caniuse.com/#feat=css-animation)
 
-### 34. 按钮边框动画
+## 34. 按钮边框动画
 ----
 创建一个鼠标悬停的边框动画
 
@@ -1493,9 +1498,8 @@ li:nth-child(odd) {
 ```
 `DEMO`
 
-![](https://user-gold-cdn.xitu.io/2019/8/13/16c89990a8585d8f?w=1512&h=134&f=png&s=7625)
 
-![](https://user-gold-cdn.xitu.io/2019/8/13/16c899925f837a0c?w=1526&h=130&f=png&s=7418)
+![](https://user-gold-cdn.xitu.io/2019/9/23/16d5d334d97bf664?w=772&h=111&f=gif&s=50802)
 
 [CodePen上预览和编辑代码](https://codepen.io/bigerfe-com/pen/RwbWjLY)
 
@@ -1504,15 +1508,13 @@ li:nth-child(odd) {
 
 浏览器支持程度 100%.
 
-### 35.甜甜圈旋转器
+## 35.甜甜圈旋转器
 ----
 创建一个甜甜圈旋转器，可用于等待内容的加载。
 
 `DEMO`
 
-![](https://user-gold-cdn.xitu.io/2019/8/13/16c899bd6b7f1b08?w=1666&h=126&f=png&s=7178)
-
-![](https://user-gold-cdn.xitu.io/2019/8/13/16c899bf53162468?w=1618&h=126&f=png&s=7115)
+![](https://user-gold-cdn.xitu.io/2019/9/23/16d5d33c7d252c16?w=770&h=85&f=gif&s=22542)
 
 `HTML`
 ```html
@@ -1549,13 +1551,12 @@ li:nth-child(odd) {
 
 [caniuse2 feat=transforms2d ](https://caniuse.com/#feat=transforms2d)
 
-### 36.缓动变量
+## 36.缓动效果
 ----
 `DEMO`
 
-![](https://user-gold-cdn.xitu.io/2019/8/13/16c89a69309924c6?w=1590&h=194&f=png&s=8711)
 
-![](https://user-gold-cdn.xitu.io/2019/8/13/16c89a6b729cd493?w=1706&h=198&f=png&s=17267)
+![](https://user-gold-cdn.xitu.io/2019/9/23/16d5d34338938270?w=765&h=139&f=gif&s=103260)
 
 `HTML`
 ```html
@@ -1604,17 +1605,16 @@ li:nth-child(odd) {
 
 浏览器支持程度** 91.6% **   [caniuse css-variables](https://caniuse.com/#feat=)
 
-### 37.高度过度
+## 37.高度过度
 ----
 当元素的高度未知时，将元素的高度从0转换为自动。
 
 `DEMO`
 
-![](https://user-gold-cdn.xitu.io/2019/8/13/16c89aa565c7dc9e?w=1580&h=94&f=png&s=13995)
 
-![](https://user-gold-cdn.xitu.io/2019/8/13/16c89aa79f1568be?w=1690&h=148&f=png&s=19183)
+![](https://user-gold-cdn.xitu.io/2019/9/24/16d5f816ddf5cd02?w=770&h=62&f=gif&s=14561)
 
-[动画效果可在CodePen上预览和编辑代码](https://codepen.io/bigerfe-com/pen/qBWOVJo)
+[CodePen上预览和编辑代码](https://codepen.io/bigerfe-com/pen/vYBbyWP)
 
 `HTML`
 ```html
@@ -1642,7 +1642,7 @@ el.style.setProperty('--max-height', height + 'px')
 ```
 **说明**
 
-浏览器支持程度** 91.6% ** caniuse css-variables
+浏览器支持程度 **91.6%** caniuse css-variables
 
 * 注意：将会导致所有动画帧重排，过度中如果元素下方有大量元素，则可能会出现滞后现象。
 
@@ -1651,14 +1651,12 @@ el.style.setProperty('--max-height', height + 'px')
 
 [caninuse - css-transitions](https://caniuse.com/#feat=css-variables)
 
-### 38.悬停阴影框动画
+## 38.悬停阴影动画
 ----
 在文本上悬停时，在文本周围创建一个阴影框动画效果。
 
 
-![](https://user-gold-cdn.xitu.io/2019/8/13/16c89b00b7f573c8?w=1462&h=124&f=png&s=6787)
-
-![](https://user-gold-cdn.xitu.io/2019/8/13/16c89b02eefe8e3a?w=1520&h=132&f=png&s=10080)
+![](https://user-gold-cdn.xitu.io/2019/9/23/16d5d364a4407876?w=760&h=77&f=gif&s=40137)
 
 [动画效果可在CodePen上预览和编辑代码](https://codepen.io/bigerfe-com/pen/rNBOJYX)
 
@@ -1685,22 +1683,21 @@ el.style.setProperty('--max-height', height + 'px')
 }
 ```
 
-浏览器支持程度** 97.3% ** 
+浏览器支持程度**97.3%** 
 
 [caniuse - feat-transforms3d ](https://caniuse.com/#feat=transforms3d)
 
 [caniuse - css-transitions ](https://caniuse.com/#feat=css-transitions)
 
 
-### 39.悬停下滑线动画
+## 39.悬停下滑线动画
 ----
 当文本悬停时，创建文本下划线动画效果。
 
 `DEMO`
 
-![](https://user-gold-cdn.xitu.io/2019/8/13/16c89b70fd3a3f31?w=1660&h=160&f=png&s=14564)
 
-![](https://user-gold-cdn.xitu.io/2019/8/13/16c89b76a188c139?w=1688&h=158&f=png&s=14596)
+![](https://user-gold-cdn.xitu.io/2019/9/23/16d5d379080f763c?w=762&h=78&f=gif&s=82825)
 
 [动画效果可在CodePen上预览和编辑代码](https://codepen.io/bigerfe-com/pen/mdbeKeO)
 
@@ -1746,14 +1743,15 @@ el.style.setProperty('--max-height', height + 'px')
 * `transform-origin: bottom right` 变换中心点到父元素的右下角。
 * `:hover::after` 然后使用scaleX（1）将宽度转换为100％，然后将中心点更改为左下角，允许它在悬停时从另一个方向转换出来。
 
-浏览器支持程度** 97.5% **
+浏览器支持程度**97.5%**
 
 [caniuse - feat=transforms2d](https://caniuse.com/#feat=transforms2d)
 
 [caniuse - css-transitions](https://caniuse.com/#feat=css-transitions)
 
+# 交互
 
-### 40. 禁用选择
+## 40. 禁用选择
 ----
 使用 css 让内容无法选取。
 
@@ -1779,18 +1777,16 @@ el.style.setProperty('--max-height', height + 'px')
 
 `user-select: none` 指定无法选择文本
 
-浏览器支持程度** 93.2% ** （需要使用前缀，这并不是防止用户复制内容的安全方法。）
+浏览器支持程度**93.2%** （需要使用前缀，这并不是防止用户复制内容的安全方法。）
 
 [caniuse - feat=user-select-none](https://caniuse.com/#feat=user-select-none)
 
-### 41. 弹出菜单
+## 41. 弹出菜单
 ----
 在悬停和焦点上弹出交互式菜单。
 
 
-![](https://user-gold-cdn.xitu.io/2019/8/13/16c89cae94d5aebc?w=1728&h=242&f=png&s=8336)
-
-![](https://user-gold-cdn.xitu.io/2019/8/13/16c89cb0e1083c9a?w=1660&h=242&f=png&s=12923)
+![](https://user-gold-cdn.xitu.io/2019/9/23/16d5d38790589933?w=771&h=138&f=gif&s=14574)
 
 [可在CodePen上预览效果和编辑代码](https://codepen.io/bigerfe-com/pen/GRKpwKx)
 
@@ -1831,7 +1827,7 @@ el.style.setProperty('--max-height', height + 'px')
 
 浏览器支持程度 100%;
 
-### 42.兄弟元素淡化
+## 42.兄弟元素淡化
 -----
 悬停时兄弟节点淡化显示.
 
@@ -1871,8 +1867,9 @@ span {
 
 [caniuse-feat=css-transitions](https://caniuse.com/#feat=css-transitions)
 
+# 其他
 
-### 43. 计算函数 Calc()
+## 43. 计算函数 Calc()
 ----
 函数calc（）允许使用数学表达式定义CSS值，属性采用的值是数学表达式的结果。
 
@@ -1909,7 +1906,7 @@ span {
 
 [caniuse - feat=calc](https://caniuse.com/#feat=calc)
 
-### 44. css 自定义变量
+## 44. css 自定义变量
 ----
 包含要重用的特定值的CSS变量。
 
@@ -1948,5 +1945,9 @@ span {
 [caniuse - feat=css-variables](https://caniuse.com/#feat=css-variables)
 
 
+----
+
+更多精彩好玩有用的前端内容，请关注公众号《前端张大胖》
 
 
+![](https://user-gold-cdn.xitu.io/2019/9/24/16d5f77f10ed945f?w=258&h=258&f=png&s=57648)
